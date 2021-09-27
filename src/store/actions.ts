@@ -11,3 +11,17 @@ export function setWeatherData(data: object) {
         data: data
     };
 }
+
+export function selectDay(day: number) {
+    return {
+        type: 'SELECT_DAY',
+        day: day
+    };
+}
+
+export function selectHour(hour: number) {
+    return {
+        type: 'SELECT_HOUR',
+        hour: hour
+    };
+}
