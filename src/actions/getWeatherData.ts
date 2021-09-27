@@ -9,6 +9,7 @@ export const getWeatherData = (location: string) => {
         let response;
         try {
             response = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=7d32591f21924f7984e115430210208&q=${location}&days=3&lang=uk`);
+            // i know that it is a bad idea to leave the key here, but i don't care, it is a project for fun
         } catch {
             response = {};
         }
